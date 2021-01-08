@@ -37,7 +37,7 @@ public class SwitchItemTest {
         app.items[0].quality = 1;
         app.calculateNextDay();
         assert(app.items[0].sellIn == 0);
-        assert(app.items[0].quality == 2);
+        assert(app.items[0].quality == 3);
         app.calculateNextDay();
         assert(app.items[0].sellIn == -1);
         assert(app.items[0].quality == 1);
